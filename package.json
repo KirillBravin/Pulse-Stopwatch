@@ -1,0 +1,21 @@
+{
+  "name": "pulse-smartwatch",
+  "version": "1.0.0",
+  "description": "Helping people to choose their pulse watch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirillBravin/Pulse-Stopwatch.git"
+  },
+  "author": "Kirill Bravin",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.85.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
