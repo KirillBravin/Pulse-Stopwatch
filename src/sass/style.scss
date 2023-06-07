@@ -1,11 +1,22 @@
 @import 'base/mixins';
 @import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/title';
+@import 'blocks/consultation';
+@import 'blocks/forms';
 @import 'base/general';
 @import 'base/media';
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'Museo Sans Cyrl', cursive;
 }
 
+body {
+    margin: 0;
+}
 .container {
     max-width: 950px;
+    margin: 0 auto;
 }
