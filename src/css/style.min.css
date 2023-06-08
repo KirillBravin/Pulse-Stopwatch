@@ -251,6 +251,32 @@
   margin-bottom: 20px;
 }
 
+.slider {
+  padding: 81px 0;
+}
+.slider__inner {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+}
+.slider .slick-prev, .slider .slick-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -66px;
+  border: none;
+  background-color: #fff;
+}
+.slider .slick-prev img, .slider .slick-next img {
+  width: 31px;
+  height: 50px;
+}
+.slider .slick-next {
+  left: auto;
+  right: -66px;
+}
+
 * {
   font-family: "Museo Sans Cyrl", cursive;
 }
