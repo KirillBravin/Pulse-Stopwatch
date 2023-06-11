@@ -34,4 +34,28 @@ $(document).ready(function(){
 
       toggleCard('.catalogue-item__link');
       toggleCard('.catalogue-item__link_back');
+
+      /* Modal */
+
+      const btnConsultation = document.querySelectorAll('[data-modal=consultation]');
+      const btnModalClose = document.querySelectorAll('.modal__close');
+      const btnBuy = document.querySelectorAll('.button_catalogue');
+      const overlay = document.querySelector('.overlay');
+      const modalConsultation = document.querySelector('#modal-consultation');
+
+      btnConsultation.forEach((e) => {
+        e.addEventListener('click', () => {
+          console.log('click');
+          overlay.style.display = 'block';
+          modalConsultation.style.display = 'block';
+        });
+      });
+
+      btnModalClose.forEach((e) => {
+        e.addEventListener('click', () => {
+          console.log('click');
+          overlay.style.display = 'none';
+          modalConsultation.style.display = 'none';
+        });
+      });
 });
