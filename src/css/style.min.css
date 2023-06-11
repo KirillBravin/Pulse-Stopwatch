@@ -520,6 +520,65 @@
   margin-left: 60px;
 }
 
+.footer {
+  height: 630px;
+  position: relative;
+}
+.footer__info {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 460px;
+  height: 270px;
+  padding: 50px 68px 60px 68px;
+  background-color: #c70101;
+}
+.footer__adress {
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.footer__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__social-item {
+  margin: 0 15px;
+}
+.footer__social-item img {
+  width: 52px;
+  height: 52px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.footer__social-item img:hover {
+  width: 60px;
+  height: 60px;
+}
+
 * {
   font-family: "Museo Sans Cyrl", cursive;
 }
