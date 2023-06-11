@@ -1,0 +1,36 @@
+.reviews {
+    padding-bottom: 48px;
+    &__review {
+        margin-top: 60px;
+        display: flex;
+        img {
+            width: 169px;
+            height: 169px;
+        }
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #0D0D0D;
+    }
+    &__progress {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #646464;
+    }
+    &__descr {
+        width: 660px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        span {
+            display: block;
+            margin-top: 24px;
+        }
+    }
+    &__descr-wrapper {
+        margin-left: 60px;
+    }
+}
