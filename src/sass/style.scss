@@ -11,6 +11,7 @@
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/slider';
+@import 'blocks/catalogue';
 * {
     font-family: 'Museo Sans Cyrl', cursive;
 }
@@ -21,4 +22,8 @@ body {
 .container {
     max-width: 950px;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none;
 }
