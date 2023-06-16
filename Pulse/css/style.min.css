@@ -1,6 +1,57 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  width: 250px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__official {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.header__official span {
+  display: block;
+  font-size: 18px;
+  line-height: 29px;
+}
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header__phone {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
 .promo {
   min-height: 650px;
-  background: url(/src/img/promo-background.png) center center/cover no-repeat;
+  background: url(../img/promo-background.png) center center/cover no-repeat;
   padding: 21px 0 93px 0;
 }
 .promo__wrapper {
@@ -68,57 +119,6 @@
 .promo__link a {
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header__logo {
-  width: 250px;
-}
-.header__logo img {
-  width: 100%;
-}
-.header__official {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  color: #FFFFFF;
-  text-align: center;
-}
-.header__official span {
-  display: block;
-  font-size: 18px;
-  line-height: 29px;
-}
-.header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.header__phone {
-  display: block;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  color: #FFFFFF;
-  text-decoration: none;
-  margin-bottom: 4px;
 }
 
 .button {
@@ -220,7 +220,7 @@
 
 .consultation {
   min-height: 680px;
-  background: url("/src/img/consultation-bg.png") center center/cover no-repeat;
+  background: url(../img/consultation-bg.png) center center/cover no-repeat;
   padding: 100px 0 108px 0;
 }
 .consultation__descr {
