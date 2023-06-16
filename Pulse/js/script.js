@@ -109,4 +109,43 @@ $(document).ready(function () {
   }
 
   $('input[name=phone]').mask("+370(999)-99999");
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+      return;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('#modal-consultation, #modal-order').fadeOut();
+      $('.overlay, #modal-thanks').fadeIn(slow);
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+  
+  //Scroll Page Up
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 700) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  $("a[href]^='#'").click(function(){
+    const _href = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(_href).offset().top+'px'
+    });
+    return false;
+  });
 });
