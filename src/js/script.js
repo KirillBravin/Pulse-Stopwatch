@@ -37,25 +37,18 @@ $(document).ready(function(){
 
       /* Modal */
 
-      const btnConsultation = document.querySelectorAll('[data-modal=consultation]');
-      const btnModalClose = document.querySelectorAll('.modal__close');
-      const btnBuy = document.querySelectorAll('.button_catalogue');
-      const overlay = document.querySelector('.overlay');
-      const modalConsultation = document.querySelector('#modal-consultation');
-
-      btnConsultation.forEach((e) => {
-        e.addEventListener('click', () => {
-          console.log('click');
-          overlay.style.display = 'block';
-          modalConsultation.style.display = 'block';
-        });
+      $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #modal-consultation').fadeIn('slow');
       });
 
-      btnModalClose.forEach((e) => {
-        e.addEventListener('click', () => {
-          console.log('click');
-          overlay.style.display = 'none';
-          modalConsultation.style.display = 'none';
-        });
+      $('.modal__close').on('click', function() {
+        $('.overlay, #modal-consultation, #modal-thanks, #modal-order').fadeOut('slow');
+      });
+
+      $('.button_catalogue').each(function(i) {
+          $(this).on('click', function() {
+            $('#modal-order .modal__descr').text($('.catalogue-item__subtitle').eq(i).text());
+            $('.overlay, #modal-order').fadeIn('slow');
+          });
       });
 });
