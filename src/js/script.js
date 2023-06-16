@@ -107,4 +107,6 @@ $(document).ready(function () {
       }
     );
   }
+
+  $('input[name=phone]').mask("+370(999)-99999");
 });
