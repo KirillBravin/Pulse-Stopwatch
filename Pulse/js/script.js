@@ -139,7 +139,7 @@ $(document).ready(function () {
     } else {
       $('.pageup').fadeOut();
     }
-  });
+  }); 
 
   $("a[href]^='#'").click(function(){
     const _href = $(this).attr("href");

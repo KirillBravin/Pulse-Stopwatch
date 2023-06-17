@@ -10,7 +10,7 @@
         display: flex;
         justify-content: space-around;
     }
-    &__icon {
+    &__item {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -33,6 +33,14 @@
         }
         a {
             color: #FF0000;
+        }
+    }
+    &__icon {
+        &_heartbeat {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-duration: 1s;
+            }
         }
     }
 }

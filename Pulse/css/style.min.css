@@ -1,3 +1,31 @@
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +197,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.advantages__icon {
+.advantages__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,21 +211,29 @@
   font-size: 14px;
   line-height: 18px;
 }
-.advantages__icon span {
+.advantages__item span {
   font-weight: 700;
   font-size: 18px;
   line-height: 29px;
   margin-bottom: 20px;
 }
-.advantages__icon img {
+.advantages__item img {
   width: 70px;
   height: 70px;
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.advantages__icon a {
+.advantages__item a {
   color: #FF0000;
+}
+.advantages__icon_heartbeat {
+  -webkit-animation: heartbeat 1.5s ease infinite;
+          animation: heartbeat 1.5s ease infinite;
+}
+.advantages__icon_heartbeat:hover {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .title {
