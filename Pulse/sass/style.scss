@@ -7,7 +7,6 @@
 @import 'base/variables';
 @import 'base/general';
 @import 'base/animations';
-@import 'base/media';
 
 @import 'blocks/header';
 @import 'blocks/promo';
@@ -22,6 +21,8 @@
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/pageup';
+@import 'base/media';
+
 * {
     font-family: 'Museo Sans Cyrl', cursive;
 }

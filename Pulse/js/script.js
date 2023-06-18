@@ -11,7 +11,6 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          dots: true,
           arrows: false,
         },
       },

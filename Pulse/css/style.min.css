@@ -4644,6 +4644,14 @@ progress {
   margin-bottom: 15px;
   text-align: center;
 }
+.consultation__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .feed-form {
   margin-top: 36px;
@@ -5073,6 +5081,60 @@ progress {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .promo .header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .promo .header__logo img {
+    width: 80%;
+  }
+  .promo__wrapper {
+    margin-top: 48px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages {
+    min-height: 450px;
+    padding-top: 40px;
+  }
+  .advantages__wrapper {
+    width: 760px;
+  }
+  .consultation {
+    padding-top: 46px;
+  }
+  .consultation .title_consultation {
+    text-align: center;
+  }
+  .consultation__descr {
+    text-align: center;
+  }
+  .slider {
+    padding: 0;
+  }
+  .catalogue__content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .reviews__descr-wrapper {
+    margin-left: 32px;
+  }
+  .reviews__descr {
+    width: 520px;
+  }
+  .footer__info {
+    width: 330px;
+    height: 234px;
+    padding: 20px 68px 60px 68px;
+  }
+  .pageup {
+    bottom: 14px;
+    right: 16px;
+  }
+}
 * {
   font-family: "Museo Sans Cyrl", cursive;
 }
