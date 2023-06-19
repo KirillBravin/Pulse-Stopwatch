@@ -4670,9 +4670,6 @@ progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .feed-form {
@@ -5132,6 +5129,11 @@ progress {
   }
   .consultation__descr {
     text-align: center;
+  }
+  .consultation__form-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .slider {
     padding: 0;

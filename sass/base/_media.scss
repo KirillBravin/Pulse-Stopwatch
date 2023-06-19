@@ -1,3 +1,7 @@
+@media (max-width: 991px) {
+    
+}
+
 @media (max-width: 767px) {
     .promo {
         .header {
@@ -29,8 +33,8 @@
         &__descr {
             text-align: center;
         }
-        .feed-form {
-            
+        &__form-wrapper {
+            justify-content: center;
         }
     }
     .slider{
