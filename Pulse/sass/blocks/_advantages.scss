@@ -43,4 +43,19 @@
             }
         }
     }
+    .animate__tada {
+        animation-play-state:paused;
+        &:hover {
+            animation-play-state:running;
+            animation-iteration-count:infinite;
+        }
+    }
+    .animate__shakeY {
+        animation-play-state:paused;
+        &:hover {
+            animation-play-state:running;
+            animation-duration: 3s;
+            animation-iteration-count:infinite;
+        }
+    }
 }
