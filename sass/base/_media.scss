@@ -222,6 +222,13 @@
             margin-bottom: 3px;
         }
     }
+    .modal {
+        &__close {
+            top: 0px;
+            right: 24px;
+            font-size: 38px;
+        }
+    }
 }
 @media (max-width: 320px) {
     .promo {
@@ -363,9 +370,6 @@
                 &__wrapper {
                     height: 330px;
                 }
-                &__footer {
-
-                }
                 &__old-price {
                     font-size: 13px;
                 }
@@ -412,7 +416,7 @@
         min-height: 382px;
         &__close {
             top: -9px;
-            right: 23px;
+            right: 7px;
             font-size: 38px;
         }
         .feed-form {

@@ -5321,6 +5321,11 @@ progress {
   .footer__phone {
     margin-bottom: 3px;
   }
+  .modal__close {
+    top: 0px;
+    right: 24px;
+    font-size: 38px;
+  }
 }
 @media (max-width: 320px) {
   .promo .header__logo {
@@ -5513,7 +5518,7 @@ progress {
   }
   .modal__close {
     top: -9px;
-    right: 23px;
+    right: 7px;
     font-size: 38px;
   }
   .modal .feed-form {
