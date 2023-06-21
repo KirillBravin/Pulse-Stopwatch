@@ -5307,6 +5307,20 @@ progress {
   .reviews__progress {
     text-align: center;
   }
+  .footer__info {
+    width: 100%;
+    height: 123px;
+    position: initial;
+    padding: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .footer__adress {
+    margin-bottom: 0;
+  }
+  .footer__phone {
+    margin-bottom: 3px;
+  }
 }
 @media (max-width: 320px) {
   .promo .header__logo {
