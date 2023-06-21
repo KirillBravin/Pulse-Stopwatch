@@ -4660,7 +4660,7 @@ progress {
 }
 
 .consultation {
-  min-height: 680px;
+  height: 762px;
   background: url(../img/consultation-bg.png) center center/cover no-repeat;
   padding: 100px 0 108px 0;
 }
@@ -5498,8 +5498,8 @@ progress {
     min-height: 382px;
   }
   .modal__close {
-    top: -27px;
-    right: -21px;
+    top: -9px;
+    right: 23px;
     font-size: 38px;
   }
   .modal .feed-form {
